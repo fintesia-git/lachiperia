@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #f7f1ea 0%, #f1e5d5 100%);
+  color: #0d0d0d;
+}
+
+:root {
+  --rojo-marron-intenso: #7f1717;
+  --rojo-marron-intenso-oscuro: #9b1e1e;
+  --dorado-calido: #f0c072;
+  --dorado-calido-oscuro: #dca64c;
+  --verde-suave: #7a8a5d;
+  --verde-suave-oscuro: #5f6d4a;
+  --negro: #0d0d0d;
+  --blanco-crema: #f7f1ea;
+  --blanco-crema-2: #f1e5d5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -0.03em;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-18px) translateX(10px);
+  }
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(18px) translateX(-12px);
+  }
+}
+
+.animate-float {
+  animation: float 9s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 11s ease-in-out infinite;
+}

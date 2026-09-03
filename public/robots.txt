@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.lachiperia.com.ar/sitemap.xml
+Host: www.lachiperia.com.ar

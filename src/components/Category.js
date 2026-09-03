@@ -18,7 +18,7 @@ const contactInfo = [
   },
 ]
 
-const FORM_ENDPOINT = 'https://formspree.io/f/xjvnedqp'
+const FORM_ENDPOINT = 'https://formspree.io/f/xaeybwjr'
 
 const Category = () => {
   return (
@@ -36,7 +36,7 @@ const Category = () => {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="https://wa.me/5491123456789?text=Hola%20La%20Chiper%C3%ADa%2C%20quiero%20hacer%20un%20pedido"
+                href="https://wa.me/5491171919908?text=Hola%20%2CQuiero%20hacer%20un%20pedido"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-[#f0c072] px-5 py-3 text-sm font-bold text-[#201711] transition hover:bg-[#f7d49b]"

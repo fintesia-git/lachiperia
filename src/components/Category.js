@@ -22,7 +22,7 @@ const FORM_ENDPOINT = 'https://formspree.io/f/xaeybwjr'
 
 const Category = () => {
   return (
-    <section id="contacto" className="mx-auto max-w-7xl px-4 pb-20 pt-4 sm:px-6 lg:px-8">
+    <section id="contacto" className="mx-auto max-w-7xl px-4 pb-8 pt-4 sm:px-6 lg:px-8">
       <div className="overflow-hidden rounded-[34px] bg-[linear-gradient(135deg,#7f1717_0%,#9b1e1e_32%,#1d1714_100%)] px-6 py-8 text-[#fef7f2] shadow-[0_30px_85px_rgba(39,27,23,0.22)] sm:px-8 lg:px-10 lg:py-10">
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center">
           <div>
@@ -113,6 +113,9 @@ const Category = () => {
           </div>
         </div>
       </div>
+      <p className="pt-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#8d7668]">
+        La Chipería · Tigre, Buenos Aires · Hecho con cariño
+      </p>
     </section>
   )
 }

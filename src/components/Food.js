@@ -28,12 +28,12 @@ const Food = () => {
   ]
 
   return (
-    <section id="catalogo" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <section id="catalogo" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-[#7a8a5d]">Nuestro catálogo</p>
           <h2 className="mt-2 text-3xl font-black tracking-tight text-[#201711] sm:text-4xl">
-            Lo más pedido para compartir y disfrutar.
+            Lo más pedido para compartir <span className="text-[#9b1e1e]">y disfrutar.</span>
           </h2>
         </div>
         <p className="max-w-xl text-sm text-[#5b4b41] sm:text-base">
@@ -83,17 +83,21 @@ const Food = () => {
               whileHover={{ y: -8, scale: 1.01 }}
               className="group overflow-hidden rounded-[28px] border border-[#eadbc3] bg-[#fffdfb] shadow-[0_18px_40px_rgba(38,25,18,0.05)]"
             >
-              <div className="overflow-hidden">
+              <div className="relative overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.name}
                   className="h-64 w-full object-cover transition duration-700 ease-out group-hover:scale-110"
                 />
+                <span className="absolute left-4 top-4 rounded-full bg-[#fffaf5]/90 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-[#7f1717] shadow-sm">
+                  {categoryLabels[item.category]}
+                </span>
               </div>
 
               <div className="space-y-3 p-4">
                 <p className="font-bold text-[#201711]">{item.name}</p>
-                <p className="text-sm text-[#6a5349]">{categoryLabels[item.category]}</p>
+                <div className="h-px bg-[#eee2d3]" />
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#967b68]">Hecho en el día</p>
               </div>
             </motion.article>
           ))}

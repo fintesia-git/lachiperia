@@ -1,0 +1,11 @@
+{
+    "chat.mcp.serverSampling": {
+        "lachiperia/.vscode/mcp.json: makenotion/notion-mcp-server": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilotcli/auto",
+                "agent-host-copilotcli:auto"
+            ]
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const contactInfo = [
   {
@@ -18,9 +18,45 @@ const contactInfo = [
   },
 ]
 
-const FORM_ENDPOINT = 'https://formspree.io/f/xaeybwjr'
-
 const Category = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submissionStatus, setSubmissionStatus] = useState('')
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+    setIsSubmitting(true)
+    setSubmissionStatus('')
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+    const endpoint = process.env.NODE_ENV === 'development' && process.env.REACT_APP_FORM_ENDPOINT
+      ? process.env.REACT_APP_FORM_ENDPOINT
+      : '/api/contact'
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(Object.fromEntries(formData.entries())),
+      })
+
+      const contentType = response.headers.get('content-type') || ''
+
+      if (!response.ok || !contentType.includes('application/json')) {
+        throw new Error('No se pudo enviar la consulta')
+      }
+
+      form.reset()
+      setSubmissionStatus('Tu consulta fue enviada. Te vamos a responder pronto.')
+    } catch (error) {
+      setSubmissionStatus('No pudimos enviar la consulta. Probá de nuevo o escribinos por WhatsApp.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <section id="contacto" className="mx-auto max-w-7xl px-4 pb-8 pt-4 sm:px-6 lg:px-8">
       <div className="overflow-hidden rounded-[34px] bg-[linear-gradient(135deg,#7f1717_0%,#9b1e1e_32%,#1d1714_100%)] px-6 py-8 text-[#fef7f2] shadow-[0_30px_85px_rgba(39,27,23,0.22)] sm:px-8 lg:px-10 lg:py-10">
@@ -57,7 +93,7 @@ const Category = () => {
               </a>
             </div>
 
-            <form action={FORM_ENDPOINT} method="POST" className="mt-6 space-y-4">
+            <form onSubmit={handleSubmit} className="mt-6 space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="block text-sm text-[#f0e4d8]">
                   <span className="mb-2 block">Nombre</span>
@@ -95,10 +131,16 @@ const Category = () => {
 
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="inline-flex items-center justify-center rounded-full bg-[#f5d9ab] px-5 py-3 text-sm font-bold text-[#201711] transition hover:bg-[#f9e3bb]"
               >
-                Enviar consulta
+                {isSubmitting ? 'Enviando...' : 'Enviar consulta'}
               </button>
+              {submissionStatus && (
+                <p className="text-sm text-[#f5d9ab]" role="status" aria-live="polite">
+                  {submissionStatus}
+                </p>
+              )}
             </form>
           </div>
 

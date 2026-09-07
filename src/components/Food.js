@@ -4,10 +4,9 @@ import { data } from '../data/data.js'
 
 const categoryLabels = {
   all: 'Todos',
-  chipa: 'Chipas',
-  mbeju: 'Mbeju',
-  dulces: 'Dulces',
-  bebidas: 'Bebidas',
+  chipas: 'Chipas & Salados',
+  panaderia: 'Panadería',
+  dulces: 'Dulces & Repostería',
 }
 
 const Food = () => {
@@ -21,10 +20,9 @@ const Food = () => {
 
   const filterButtons = [
     { label: 'Todos', value: 'all' },
-    { label: 'Chipas', value: 'chipa' },
-    { label: 'Mbeju', value: 'mbeju' },
-    { label: 'Dulces', value: 'dulces' },
-    { label: 'Bebidas', value: 'bebidas' },
+    { label: 'Chipas', value: 'chipas' },
+    { label: 'Panadería', value: 'panaderia' },
+    { label: 'Dulces & Repostería', value: 'dulces' },
   ]
 
   return (
@@ -94,10 +92,12 @@ const Food = () => {
                 </span>
               </div>
 
-              <div className="space-y-3 p-4">
+              <div className="space-y-2 p-4">
                 <p className="font-bold text-[#201711]">{item.name}</p>
                 <div className="h-px bg-[#eee2d3]" />
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#967b68]">Hecho en el día</p>
+                {item.description && (
+                  <p className="text-xs leading-relaxed text-[#604f44]">{item.description}</p>
+                )}
               </div>
             </motion.article>
           ))}

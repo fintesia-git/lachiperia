@@ -56,7 +56,7 @@ const About = () => {
           >
             <img
               className="h-[440px] w-full rounded-[24px] object-cover"
-              src="https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+              src="/fotos/local_01.png"
               alt="Local de La Chipería"
             />
           </motion.div>
@@ -80,7 +80,7 @@ const About = () => {
           ['Hecho', 'Con dedicación artesanal'],
         ].map(([value, label]) => (
           <div key={label} className="rounded-2xl border border-[#e7d6bf] bg-[#fffaf5]/70 p-5 text-center shadow-[0_12px_28px_rgba(55,38,28,0.04)]">
-            <p className="font-serif text-3xl font-bold text-[#9b1e1e]">{value}</p>
+            <p className="text-3xl font-black text-[#9b1e1e]">{value}</p>
             <p className="mt-1 text-xs font-bold uppercase tracking-[0.16em] text-[#796457]">{label}</p>
           </div>
         ))}

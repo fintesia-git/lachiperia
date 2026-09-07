@@ -156,8 +156,8 @@ const Category = () => {
         </div>
       </div>
       <p className="pt-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#8d7668]">
-        La Chipería · Tigre, Buenos Aires · Hecho con cariño
-      </p>
+        La Chipería · Tigre, Buenos Aires · info@lachiperia.com
+      </p> 
     </section>
   )
 }

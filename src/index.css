@@ -33,8 +33,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cormorant Garamond', Georgia, serif;
-  letter-spacing: -0.03em;
+  font-family: 'Arial Rounded MT Bold', 'Arial Rounded', system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 body::-webkit-scrollbar {

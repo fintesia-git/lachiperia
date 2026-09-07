@@ -1,85 +1,165 @@
 export const data = [
   {
     id: 1,
-    name: 'Chipa Argolla',
-    category: 'chipa',
-    image:
-      'https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Chipa Tradicional',
+    category: 'chipas',
+    image: '/fotos/chipa_y_mate.png',
+    description: 'Chipa caliente artesanal horneada en el día, 100% libre de gluten.',
   },
   {
     id: 2,
-    name: 'Mbeju Tradicional',
-    category: 'mbeju',
-    image:
-      'https://images.unsplash.com/photo-1541580628461-12501096fa47?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Chipa Cruda (para hornear)',
+    category: 'chipas',
+    image: '/fotos/chipa_cruda-01.png',
+    description: 'Bolsa de chipa congelada lista para mandar al horno en tu casa.',
   },
   {
     id: 3,
-    name: 'Chipa Guazú',
-    category: 'chipa',
-    image:
-      'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Scones',
+    category: 'dulces',
+    image: '/fotos/scones.png',
+    description: 'Scones británicos ideales para acompañar el té o el café, sin gluten y recién horneados.',
   },
   {
     id: 4,
-    name: 'Cocido Quemado',
-    category: 'bebidas',
-    image:
-      'https://images.unsplash.com/photo-1550581190-9c1c48d21d6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Pan Brioche',
+    category: 'panaderia',
+    image: '/fotos/pan_brioche.png',
+    description: 'Pan brioche tierno y mantecoso, ideal para sándwiches gourmet.',
   },
   {
     id: 5,
-    name: 'Alfajor de Maicena',
-    category: 'dulces',
-    image:
-      'https://images.unsplash.com/photo-1596708682057-04d9b2395d9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Pan Francés',
+    category: 'panaderia',
+    image: '/fotos/pan_frances.jpg',
+    description: 'Corteza crujiente y miga esponjosa para tus comidas diarias.',
   },
   {
     id: 6,
-    name: 'Chipa con Carne',
-    category: 'chipa',
-    image:
-      'https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Pan de Hamburguesa',
+    category: 'panaderia',
+    image: '/fotos/pan_hamburguesa.png',
+    description: 'Panes de hamburguesa suaves y resistentes, libres de gluten.',
   },
   {
     id: 7,
-    name: 'Jugo de Naranja',
-    category: 'bebidas',
-    image:
-      'https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    name: 'Pan Lactal',
+    category: 'panaderia',
+    image: '/fotos/pan_lactal.png',
+    description: 'Clásico pan moldeado perfecto para tostadas de cada mañana.',
   },
   {
     id: 8,
-    name: 'Pasta Frola',
+    name: 'Pan de Lino y Sarraceno',
+    category: 'panaderia',
+    image: '/fotos/pan_lino.png',
+    description: 'Pan nutritivo enriquecido con semillas de lino seleccionadas.',
+  },
+  {
+    id: 9,
+    name: 'Pan de Pancho',
+    category: 'panaderia',
+    image: '/fotos/pan_pancho.png',
+    description: 'Pan para pancho tierno, seguro y apto para celíacos.',
+  },
+  {
+    id: 10,
+    name: 'Pan Rallado',
+    category: 'panaderia',
+    image: '/fotos/pan_rallado.png',
+    description: 'El rebozador ideal para milanesas doradas y crocantes.',
+  },
+  {
+    id: 11,
+    name: 'Alfajores de Maicena',
     category: 'dulces',
-    image:
-      'https://images.unsplash.com/photo-1579954115545-a95591f28bfc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+    image: '/fotos/alfajores_mejor.png',
+    description: 'Suaves alfajores rellenos con abundante dulce de leche.',
+  },
+  {
+    id: 12,
+    name: 'Brownie de Chocolate',
+    category: 'dulces',
+    image: '/fotos/brownie.png',
+    description: 'Brownie húmedo con puro cacao e ingredientes naturales.',
+  },
+  {
+    id: 13,
+    name: 'Budín de Chocolate',
+    category: 'dulces',
+    image: '/fotos/budin_chocolate.png',
+    description: 'Budín esponjoso con sabor intenso a chocolate.',
+  },
+  {
+    id: 14,
+    name: 'Budín de Vainilla',
+    category: 'dulces',
+    image: '/fotos/budin_vainilla.png',
+    description: 'Suave budín de vainilla preparado al estilo casero.',
+  },
+  {
+    id: 15,
+    name: 'Carrot Cake (Budín de Zanahoria)',
+    category: 'dulces',
+    image: '/fotos/carrot.png',
+    description: 'Budín de zanahoria especiado, súper húmedo y sabroso.',
+  },
+  {
+    id: 16,
+    name: 'Cookies Artesanales',
+    category: 'dulces',
+    image: '/fotos/cookies.png',
+    description: 'Galletitas crujientes perfectas para la merienda.',
+  },
+  {
+    id: 17,
+    name: 'Merenguitos',
+    category: 'dulces',
+    image: '/fotos/merenguitos.png',
+    description: 'Bocados livianos de merengue crocante sin gluten.',
+  },
+  {
+    id: 18,
+    name: 'Mielitas',
+    category: 'dulces',
+    image: '/fotos/mielitas.png',
+    description: 'Galletitas de miel tradicionales sin TACC.',
+  },
+  {
+    id: 19,
+    name: 'Pastafrola',
+    category: 'dulces',
+    image: '/fotos/pastafrola.png',
+    description: 'Tarta dulce artesanal con masa suave y relleno tradicional.',
+  },
+  {
+    id: 20,
+    name: 'Vainillas',
+    category: 'dulces',
+    image: '/fotos/vainillas.png',
+    description: 'Clásicas vainillas ideales para postres o mojar en leche.',
   },
 ];
 
 export const categories = [
   {
     id: 1,
-    name: 'Promos',
-    image:
-      'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Deals_BrowseHome@3x.png',
+    name: 'Chipas & Salados',
+    image: '/fotos/chipa_y_mate.png',
   },
   {
     id: 2,
-    name: 'Chipa',
-    image:
-      'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/FastFood_BrowseHome@3x.png',
+    name: 'Panadería Sin TACC',
+    image: '/fotos/pan_brioche.png',
   },
   {
     id: 3,
-    name: 'Mbeju',
-    image:
-      'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Pizza_BrowseHome@3x.png',
+    name: 'Dulces & Repostería',
+    image: '/fotos/alfajores_mejor.png',
   },
   {
     id: 4,
-    name: 'Desayunos',
-    image:
-      'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Breakfast_BrowseHome@3x.png',
-  }
+    name: 'Congelados',
+    image: '/fotos/chipa_cruda-01.png',
+  },
 ];

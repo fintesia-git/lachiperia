@@ -18,7 +18,7 @@ export const data = [
     name: 'Scones',
     category: 'dulces',
     image: '/fotos/scones.png',
-    description: 'Scones británicos ideales para acompañar el té o el café, sin gluten y recién horneados.',
+    description: 'Scones británicos ideales para acompañar el té o el café, recién horneados en nuestra producción libre de gluten.',
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const data = [
     name: 'Pan de Hamburguesa',
     category: 'panaderia',
     image: '/fotos/pan_hamburguesa.png',
-    description: 'Panes de hamburguesa suaves y resistentes, libres de gluten.',
+    description: 'Panes de hamburguesa suaves y resistentes, elaborados en nuestra producción libre de gluten.',
   },
   {
     id: 7,
@@ -116,14 +116,14 @@ export const data = [
     name: 'Merenguitos',
     category: 'dulces',
     image: '/fotos/merenguitos.png',
-    description: 'Bocados livianos de merengue crocante sin gluten.',
+    description: 'Bocados livianos de merengue crocante, elaborados en nuestra producción libre de gluten.',
   },
   {
     id: 18,
     name: 'Mielitas',
     category: 'dulces',
     image: '/fotos/mielitas.png',
-    description: 'Galletitas de miel tradicionales sin TACC.',
+    description: 'Galletitas de miel tradicionales, elaboradas en nuestra producción libre de gluten.',
   },
   {
     id: 19,
@@ -149,7 +149,7 @@ export const categories = [
   },
   {
     id: 2,
-    name: 'Panadería Sin TACC',
+    name: 'Panadería 100% libre de gluten',
     image: '/fotos/pan_brioche.png',
   },
   {

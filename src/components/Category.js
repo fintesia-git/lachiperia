@@ -13,9 +13,9 @@ const contactInfo = [
     text: 'De 10:00 a 18:00 hs. · Sábados 10:00 a 14:00 hs. · Domingos cerrados.',
   },
   {
-    label: 'Instagram',
-    value: '@lachiperia',
-    text: 'Seguinos para ver novedades y productos.',
+    label: 'Retiro y entrega',
+    value: 'Pick-up gratis',
+    text: 'Delivery a convenir según cada pedido.',
   },
 ]
 
@@ -159,9 +159,9 @@ const Category = () => {
             </form>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-3">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {contactInfo.map((item) => (
-              <div key={item.label} className="rounded-[24px] border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
+              <div key={item.label} className="rounded-[24px] border border-white/10 bg-white/5 p-4 backdrop-blur-sm">
                 <p className="text-xs uppercase tracking-[0.24em] text-[#d1b89d]">{item.label}</p>
                 <p className="mt-3 text-xl font-black text-[#fef7f2]">{item.value}</p>
                 <p className="mt-2 text-sm leading-6 text-[#e9d7c9]">{item.text}</p>
@@ -171,13 +171,19 @@ const Category = () => {
         </div>
       </div>
       <p className="pt-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#8d7668]">
-        La Chipería · Tigre, Buenos Aires · info@lachiperia.com
+        +54 9 11 7191 9908 · CUIT 27203387216 · info@lachiperia.com
       </p> 
+      <p className="mt-3 text-center text-sm text-[#7b655a]">
+        Av. Agustin Garcia 6649, local 21
+      </p>
       <nav aria-label="Información legal" className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-[#7b655a]">
         <a href="#privacidad" className="underline underline-offset-2">Privacidad</a>
         <a href="#condiciones" className="underline underline-offset-2">Términos y condiciones</a>
         <a href="#cambios" className="underline underline-offset-2">Cambios y reclamos</a>
         <a href="#cookies" className="underline underline-offset-2">Cookies y terceros</a>
+        <a href="#produccion" className="underline underline-offset-2">Producción</a>
+        <a href="#fotografias" className="underline underline-offset-2">Fotografías</a>
+        <a href="#faq" className="underline underline-offset-2">Preguntas frecuentes</a>
       </nav>
     </section>
   )

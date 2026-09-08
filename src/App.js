@@ -5,17 +5,20 @@ import Food from './components/Food'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import About from './components/About'
+import Legal from './components/Legal'
 
 const App = () => {
   return (
     <div className="paper-texture min-h-screen bg-[radial-gradient(circle_at_top,_rgba(214,131,78,0.14),_transparent_30%),linear-gradient(180deg,#f8f1e7_0%,#f5ede5_100%)] text-stone-800">
       <Navbar />
-      <main>
+      <a href="#contenido" className="skip-link">Saltar al contenido principal</a>
+      <main id="contenido">
         <Hero />
         <About />
         <Food />
         <Card />
         <Category />
+        <Legal />
       </main>
     </div>
   )

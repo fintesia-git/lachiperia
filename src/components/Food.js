@@ -43,11 +43,13 @@ const Food = () => {
         <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="mb-2 text-sm font-semibold text-[#554239]">Filtrar por categoría</p>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2" role="group" aria-label="Categorías del catálogo">
               {filterButtons.map((button) => (
                 <button
                   key={button.value}
+                  type="button"
                   onClick={() => setSelectedCategory(button.value)}
+                  aria-pressed={selectedCategory === button.value}
                   className={`rounded-full border px-4 py-2 text-sm font-medium transition ${
                     selectedCategory === button.value
                       ? 'border-[#2b1d18] bg-[#2b1d18] text-[#fef7f2] shadow-md'

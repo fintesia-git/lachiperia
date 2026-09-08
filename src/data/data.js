@@ -60,7 +60,7 @@ export const data = [
     name: 'Pan de Pancho',
     category: 'panaderia',
     image: '/fotos/pan_pancho.png',
-    description: 'Pan para pancho tierno, seguro y apto para celíacos.',
+    description: 'Pan para pancho tierno, ideal para compartir.',
   },
   {
     id: 10,
@@ -81,7 +81,7 @@ export const data = [
     name: 'Brownie de Chocolate',
     category: 'dulces',
     image: '/fotos/brownie.png',
-    description: 'Brownie húmedo con puro cacao e ingredientes naturales.',
+    description: 'Brownie húmedo con cacao y sabor intenso a chocolate.',
   },
   {
     id: 13,

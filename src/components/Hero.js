@@ -27,7 +27,7 @@ const Hero = () => {
               transition={{ delay: 0.15 }}
               className="inline-flex items-center rounded-full border border-[#d9b271] bg-[#fffdfb]/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.28em] text-[#7a2f26]"
             >
-              100% libre de gluten · tradición + sabor
+              Tradición + sabor
             </motion.div>
 
             <div className="space-y-4">
@@ -67,12 +67,8 @@ const Hero = () => {
                 <span>chipas disfrutadas</span>
               </div>
               <div>
-                <p className="text-2xl font-black text-[#201711]">100%</p>
-                <span>artesanal</span>
-              </div>
-              <div>
-                <p className="text-2xl font-black text-[#201711]">4.9/5</p>
-                <span>de nuestros clientes</span>
+                <p className="text-2xl font-black text-[#201711]">Hecho</p>
+                <span>de forma artesanal</span>
               </div>
             </div>
           </div>

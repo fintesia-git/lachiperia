@@ -73,6 +73,23 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  border-radius: 0.75rem;
+  background: #201711;
+  color: #fffaf5;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .paper-texture {
   background-image: radial-gradient(rgba(81, 50, 30, 0.06) 0.7px, transparent 0.7px);
   background-size: 7px 7px;

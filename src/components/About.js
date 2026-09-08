@@ -12,7 +12,7 @@ const About = () => {
           </h2>
         </div>
         <p className="max-w-xl text-sm text-[#5b4b41] sm:text-base">
-          Nacida hace más de 10 años en Tigre, Buenos Aires, La Chipería es un emprendimiento familiar que combina el auténtico sabor del norte argentino con la necesidad de opciones libres de gluten. Nuestra pasión por la panadería artesanal nos lleva a crear productos de alta calidad, seguros y deliciosos para todos.
+          Nacida hace más de 10 años en Tigre, Buenos Aires, La Chipería es un emprendimiento familiar que combina el auténtico sabor del norte argentino con la necesidad de opciones libres de gluten. Nuestra pasión por la panadería artesanal nos lleva a crear productos para compartir.
         </p>
       </div>
 
@@ -27,11 +27,11 @@ const About = () => {
         >
           <h3 className="text-2xl font-black tracking-tight text-[#201711]">Nuestra historia</h3>
           <p className="text-base leading-7 text-[#5d4d45]">
-            Fundada por una oriunda de Posadas, Misiones, La Chipería nació tras detectar la creciente necesidad de opciones para celíacos. Lo que empezó en la cocina de una casa con la tradicional chipa adaptada al mundo libre de gluten, creció hasta abrir un local comercial en 2016 y evolucionar hacia una panadería libre de gluten de catálogo extenso.
+            Fundada por una posadeña, La Chipería nació tras detectar la creciente necesidad de opciones para celíacos. Lo que empezó en la cocina de una casa con la tradicional chipa adaptada al mundo libre de gluten, creció hasta abrir un local comercial en 2016 y evolucionar hacia una panadería libre de gluten de catálogo extenso.
           </p>
           <h3 className="mt-6 text-2xl font-black tracking-tight text-[#201711]">Misión</h3>
           <p className="text-base leading-7 text-[#5d4d45]">
-            Traer el auténtico sabor del norte argentino a las bocas de todos los consumidores del país, haciendo que la alimentación libre de gluten sea accesible, segura y deliciosa para quienes eligen este estilo de vida o tienen dificultades gástricas.
+            Traer el auténtico sabor del norte argentino a las bocas de todos los consumidores del país, haciendo que la alimentación libre de gluten sea accesible y deliciosa para quienes eligen este estilo de vida.
           </p>
           <h3 className="mt-6 text-2xl font-black tracking-tight text-[#201711]">Visión</h3>
           <p className="text-base leading-7 text-[#5d4d45]">
@@ -76,7 +76,7 @@ const About = () => {
       <div className="mt-12 grid gap-3 sm:grid-cols-3">
         {[
           ['2016', 'Abrimos nuestro local'],
-          ['100%', 'Libre de gluten'],
+          ['Sin TACC', 'Opciones libres de gluten'],
           ['Hecho', 'Con dedicación artesanal'],
         ].map(([value, label]) => (
           <div key={label} className="rounded-2xl border border-[#e7d6bf] bg-[#fffaf5]/70 p-5 text-center shadow-[0_12px_28px_rgba(55,38,28,0.04)]">

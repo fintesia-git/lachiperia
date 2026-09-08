@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 const values = [
   {
     title: 'Calidad intransigente',
-    text: 'Ingredientes de primera selección sin atajos. Cada producto responde a un estándar de excelencia que garantiza sabor y seguridad.',
+    text: 'Ingredientes seleccionados y atención a cada detalle para que el sabor esté siempre en el centro.',
     accent: 'Primero lo esencial',
     tone: 'from-[#f3d9a7] to-[#f9f4ee]',
   },

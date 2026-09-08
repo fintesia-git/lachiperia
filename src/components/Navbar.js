@@ -22,7 +22,7 @@ const Navbar = () => {
           />
           <div>
             <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[#9b1e1e]">Panadería artesanal</p>
-            <h1 className="text-xl font-black tracking-tight text-[#201711] sm:text-2xl">La Chipería</h1>
+            <p className="text-xl font-black tracking-tight text-[#201711] sm:text-2xl">La Chipería</p>
           </div>
         </a>
 

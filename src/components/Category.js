@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FiInstagram } from 'react-icons/fi'
 
 const contactInfo = [
   {
@@ -85,21 +86,20 @@ const Category = () => {
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[#7a655d] bg-transparent px-5 py-3 text-sm font-semibold text-[#fef7f2] transition hover:border-[#d7cab9]"
               >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                  alt="Instagram La Chipería"
-                  className="h-6 w-6 object-contain"
-                />
+                <FiInstagram aria-hidden="true" size={24} />
+                <span className="sr-only">Abrir Instagram de La Chipería</span>
               </a>
             </div>
 
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+              <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hidden" aria-hidden="true" />
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="block text-sm text-[#f0e4d8]">
                   <span className="mb-2 block">Nombre</span>
                   <input
                     type="text"
                     name="name"
+                    autoComplete="name"
                     placeholder="Tu nombre"
                     className="w-full rounded-2xl border border-[#7a655d] bg-[#fffaf5]/5 px-3 py-2.5 text-[#fffaf5] placeholder:text-[#d3bda8] outline-none ring-0 transition focus:border-[#f0bf7d]"
                     required
@@ -111,6 +111,7 @@ const Category = () => {
                   <input
                     type="email"
                     name="email"
+                    autoComplete="email"
                     placeholder="tuemail@mail.com"
                     className="w-full rounded-2xl border border-[#7a655d] bg-[#fffaf5]/5 px-3 py-2.5 text-[#fffaf5] placeholder:text-[#d3bda8] outline-none ring-0 transition focus:border-[#f0bf7d]"
                     required
@@ -127,6 +128,20 @@ const Category = () => {
                   className="w-full rounded-2xl border border-[#7a655d] bg-[#fffaf5]/5 px-3 py-2.5 text-[#fffaf5] placeholder:text-[#d3bda8] outline-none ring-0 transition focus:border-[#f0bf7d]"
                   required
                 />
+              </label>
+
+              <label className="flex items-start gap-3 text-sm text-[#f0e4d8]">
+                <input
+                  type="checkbox"
+                  name="privacyConsent"
+                  value="accepted"
+                  required
+                  className="mt-1 h-4 w-4 accent-[#f0c072]"
+                />
+                <span>
+                  Acepto que La Chipería use estos datos para responder mi consulta. Leí la{' '}
+                  <a href="#privacidad" className="font-semibold underline underline-offset-2">política de privacidad</a>.
+                </span>
               </label>
 
               <button
@@ -158,6 +173,12 @@ const Category = () => {
       <p className="pt-8 text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#8d7668]">
         La Chipería · Tigre, Buenos Aires · info@lachiperia.com
       </p> 
+      <nav aria-label="Información legal" className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2 text-xs text-[#7b655a]">
+        <a href="#privacidad" className="underline underline-offset-2">Privacidad</a>
+        <a href="#condiciones" className="underline underline-offset-2">Términos y condiciones</a>
+        <a href="#cambios" className="underline underline-offset-2">Cambios y reclamos</a>
+        <a href="#cookies" className="underline underline-offset-2">Cookies y terceros</a>
+      </nav>
     </section>
   )
 }

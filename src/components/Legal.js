@@ -52,6 +52,10 @@ const Legal = () => {
               <p className="mt-2">Sí, el pick-up es gratis. El horario y los detalles de retiro se coordinan al confirmar el pedido.</p>
             </details>
             <details>
+              <summary className="cursor-pointer font-bold text-[#201711]">¿Realizan facturas para solicitar reintegros en obras sociales?</summary>
+              <p className="mt-2">Sí. Estamos registrados como local gastronómico libre de gluten, nos puede solicitar la factura correspondiente.</p>
+            </details>
+            <details>
               <summary className="cursor-pointer font-bold text-[#201711]">¿Hacen envíos?</summary>
               <p className="mt-2">El delivery se coordina a convenir según cada pedido. Consultanos por WhatsApp para conocer la disponibilidad y el costo.</p>
             </details>
